@@ -1,6 +1,16 @@
 # 项目简介
 mini_kv，使用hashicorp/raft，实现一个简单的分布式KV存储服务
-
+# 目录结构
+```text
+├── cache.go 内存KV存储
+├── cluster.go raft集群构建
+├── fsm.go raft log状态机
+├── http.go http服务
+├── main.go 启动
+├── options.go 命令可选项
+├── run.sh 
+└── snapshot.go 快照管理
+```
 # 使用
 ## 初始化
 
